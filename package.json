@@ -1,0 +1,23 @@
+{
+  "name": "es6-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "babel app -d dist --source-maps --compact --minified && nodemon --watch app app/init.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "nodemon": "2.0.2"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
